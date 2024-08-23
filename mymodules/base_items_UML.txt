@@ -1,0 +1,94 @@
+@startuml
+class Item {
+        name
+    quantity
+    unitPrice
+    location
+    __init__()
+}
+class Instrument {
+        name
+    package
+    __init__()
+}
+class Component {
+        name
+    package
+    __init__()
+}
+class BJT {
+        type
+    Icmax
+    beta
+    __init__()
+}
+class MOSFET {
+        type
+    VT
+    __init__()
+}
+class Diode {
+        VD
+    __init__()
+}
+class Led {
+        color
+    __init__()
+}
+class Zener {
+        VZ
+    __init__()
+}
+class GraetzBridge {
+        Imax
+    __init__()
+}
+class IC {
+        pinout
+    __init__()
+}
+class OPAMP {
+        CMRR
+    __init__()
+}
+class Timer {
+        __init__()
+}
+class Logic {
+        logicFunciton
+    __init__()
+}
+class Microcontroller {
+        family
+    SRAM
+    __init__()
+}
+class Resistor {
+        R
+    __init__()
+}
+class Capacitor {
+        C
+    __init__()
+}
+class Inductor {
+        L
+    __init__()
+}
+Item <|-- Instrument
+Item <|-- Component
+Component <|-- BJT
+Component <|-- MOSFET
+Component <|-- Diode
+Diode <|-- Led
+Diode <|-- Zener
+Diode <|-- GraetzBridge
+Component <|-- IC
+IC <|-- OPAMP
+IC <|-- Timer
+IC <|-- Logic
+IC <|-- Microcontroller
+Component <|-- Resistor
+Component <|-- Capacitor
+Component <|-- Inductor
+@enduml
