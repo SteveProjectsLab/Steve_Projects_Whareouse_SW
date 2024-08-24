@@ -2,9 +2,8 @@
 # in PS usa il comando: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 from mymodules import * 
-
 import maskpass
-pwd = maskpass.askpass()
+
 
 BC327 = BJT('BC327',0,0,'TO92','PNP','10mA',40,'contenitore A5')
 BC337 = BJT('BC337',0,0,'TO92','NPN','10mA',40,'contenitore A5')
@@ -21,6 +20,7 @@ print('----------------------------------------------------------')
 print('\t\tWhareouse software manager\n\t\tby Steve Projects')
 print('----------------------------------------------------------')
 
-pwd=input('inserisci la password:\n')
+#pwd=input('inserisci la password:\n')
+pwd = maskpass.askpass()
 DB=DataBase_SteveProjectWharehouse('localhost','GeneralKenobi',pwd,'SteveProjectsWharehouse')
 #DB.find_by_name('BC327')

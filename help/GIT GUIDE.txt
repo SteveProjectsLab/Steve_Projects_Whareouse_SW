@@ -1,0 +1,25 @@
+	
+	git init
+	git add .
+	git commit -m 'commento'
+
+elimino file e salvo di nuovo
+
+	git log 
+
+per tornare indietro copio hash code
+	git checkout code
+
+to push it to the websitee
+
+	git push -u origin master
+
+to do a new branch
+	git checkout -b mybranch
+	git branch
+
+i can merge changes in a branch, i can push in the master
+do a pull request,and then push in main
+
+to have changes on your gomputer
+	git pull origin master

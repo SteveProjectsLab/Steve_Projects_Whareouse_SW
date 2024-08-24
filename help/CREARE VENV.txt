@@ -1,0 +1,16 @@
+crea un virtual environment
+
+python -m venv myenv
+
+lancia
+	myenv\Scripts\activate
+
+metti come prima riga nel file da lanciare
+	#! C:\Users\stefa\OneDrive\Desktop\Steve_Projects_Wharehouse_Software\myenv\Scripts\python.exes
+
+
+per condividere i file, salvare situazione moduli, e non condividi env
+	pip freeze>requirements.txt
+
+per portarti alla stessa situazione qunado installi su altro pc
+	pip install -r requirements.txt
