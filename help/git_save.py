@@ -2,7 +2,7 @@ import subprocess
 #import os
 
 print('adding to git..')
-command =r'add .'
+command =r'git add .'
 subprocess.run(command, shell=True, capture_output=False, text=True)
 
 comment=input('Insert a comment to commit:\n')
