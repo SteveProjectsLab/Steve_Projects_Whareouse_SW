@@ -11,5 +11,5 @@ command =r'git commit -m '+comment
 subprocess.run(command, shell=True, capture_output=False, text=True)
 
 print('pushing to git..')
-command =r'git push -u origin master'
+command =r'git push -u origin main'
 subprocess.run(command, shell=True, capture_output=False, text=True)
